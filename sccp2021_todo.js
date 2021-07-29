@@ -5,6 +5,7 @@ let num = 0;
 
 function getTask(){
 	const task = input.value;
+	input.value = "";
   if(task == "" || num >= 10) return;
   num++;
   const listitem = document.createElement("li");
